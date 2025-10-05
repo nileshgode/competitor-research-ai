@@ -1,0 +1,48 @@
+[project]
+name = "competitor-research-ai"
+version = "0.1.0"
+description = "Automated Competitor Analysis Report Generator with LangGraph"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "langchain",
+    "langchain-openai",
+    "langchain-google-genai",
+    "langchain-groq",
+    "langchain-ollama",
+    "langchain-community",
+    "tavily-python",
+    "fastapi",
+    "uvicorn[standard]",
+    "streamlit",
+    "python-dotenv",
+    "pydantic",
+    "pydantic-settings",
+    "httpx",
+    "aiofiles",
+    "python-multipart",
+]
+
+authors = [
+    { name = "Nilesh Gode", email = "nileshg6716@gmail.com" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "black",
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-asyncio",
+]
